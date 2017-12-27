@@ -1,0 +1,75 @@
+<div class="zijin-study">
+	<div class="zijin-study-head">
+        <div class="container">
+            <h1>紫金量化 历史/实盘测试/真实交易</h1>
+            <p>无不管是历史回测，还是实盘交易测试，最终结果的再优化都不可忽视。而优化总结也总能更好的支撑测试的进行。</p>
+            <p>我们将历史回测与实盘测试作区分主要是针对交易数据多少，交易信号强弱。同时我们也设计了测试报告自动生成与人工补充相结合。</p>
+			<p>真实交易只有授权用户方可访问，目前仅支持 南方稀有贵金属交易所 的真实交易，后面陆续会增加别的产品作为真实交易对象，实盘模拟是真</p>
+			<p>实交易的理想交易状态，真实交易策略信号发送方，是用户资金账户，交易所的中间方。</p>
+        </div> 
+        <div class="zijin-study-bigmask"></div>
+	</div>
+	<div class="zijin-study-body">
+		<div class="container"> 
+			<div class="row">
+				<div class="col-md-3 col-sm-6 zijin-study-item study-item-one">
+					<div class="zijin-study-box">
+						<i></i>
+						<h3>一站式研究</h3>
+						<p>与“数据”，“历史回测”，“实盘测试”四大模块组合成一站式模型测试研究平台</p>
+						<span class="zijin-study-line study-line1"></span>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 zijin-study-item study-item-two">
+					<div class="zijin-study-box">
+						<i></i>
+						<h3>报告自动生成</h3>
+						<p>依据由测试产生的交易数据，自动生成具有重点，易于理解的研究报告。</p>
+						<span class="zijin-study-line study-line2"></span>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 zijin-study-item study-item-three">
+					<div class="zijin-study-box">
+						<i></i>
+						<h3>人工辅助研究</h3>
+						<p>结合测试结果，也可人为参与到研究报告的撰写与分享。</p>
+						<span class="zijin-study-line study-line3"></span>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 zijin-study-item study-item-four">
+					<div class="zijin-study-box">
+						<i></i>
+						<h3>从研究中学习</h3>
+						<p>结合每日的研究结果，依赖学习模型，更好的优化模型，为下一步自动优化模型提供了可能。</p>
+						<span class="zijin-study-line study-line4"></span>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		<div class="zijin-study-footer">
+			<div class="container">
+				<div class="row text-center" ng-if='user.is_admin!=true'>
+					<div class="col-md-2 col-md-offset-3" style="margin-left: 20%">
+						<button class="zijin-study-leftbtn" ng-click='hisActtoryRes("/analyse")'>历史回测</button>
+					</div>
+
+					<div class="col-md-2" style="margin-left: 20%">
+						<button class="zijin-study-rightbtn" ng-click='hisActtoryRes("/actualRes")'>实盘模拟</button>
+					</div>
+				</div>
+				<div class="row text-center" ng-if='user.is_admin==true'>
+					<div class="col-md-2 col-md-offset-3" style="margin-left: 12%">
+						<button class="zijin-study-leftbtn" ng-click='hisActtoryRes("/analyse")'>历史回测</button>
+					</div>
+					<div class="col-md-2" style="margin-left: 12%">
+						<button class="zijin-study-rightbtn" ng-click='hisActtoryRes("/actualRes")'>实盘模拟</button>
+					</div>
+					<div class="col-md-2" style="margin-left: 12%">
+						<button class="zijin-study-middlebtn" ng-click='hisActtoryRes("/trueRes")'>真实交易</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
